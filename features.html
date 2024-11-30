@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		
+		body{
+			background: #e60000
+		}
+
+		.box{
+			background-color: whitesmoke;
+			width: 102.5%;
+			margin-left: -2%;
+			margin-top:-1.2%;
+			height: 100px
+		}
+
+		.box p{
+			font-family: "Courier New", monospace;
+			font-size: 35px;
+			color: red;		
+			float: left;
+			margin-left: 3.5%;
+			margin-top: 2.5%;
+			letter-spacing: 3px;
+			text-shadow: 2px 2px 2px black;
+
+		}
+
+		.box a{
+			text-decoration: none;
+			color: red;	
+		}		
+
+		.header{
+			display: inline-flex;
+			align-items: center;
+			gap: 25px;
+			margin-left: 12%;
+			margin-top: -20%;
+			max-width: 36%;
+		}
+
+		.header img{
+			height: 80px;
+			width: 100px;
+			margin-top: -2%;
+			margin-left: -37%;
+			padding: 20px;
+		}
+
+			.header ul{
+			list-style-type: none;
+			display: inline-flex;
+			font-family: "Courier New", monospace;
+			font-size: 25px;
+			gap: 38px;
+			margin-top: 3%;	
+			margin-left: -20px;
+		}
+
+		.login{
+			float: right;
+			margin-right: 5%;
+			margin-top: -5%;
+		}
+
+		.login input{
+			height: 40px;
+			margin-right:10px;
+			border-radius: 15px;
+			border: solid, black 1px;
+
+		}
+		.login a{
+			text-decoration: none;
+			color: white;
+			font-size: 15px;
+		}
+
+		.login button{
+			border-radius: 5px;
+			background-color: #e60000;
+			border: none;	
+
+		}
+
+		button:hover{
+			scale: 1.2;
+			transition-duration: 0.4s;
+		}
+
+		.header a{
+			text-decoration: none;
+			color: black;
+		}
+
+			a:hover{
+			scale: 1.1;
+			transition-duration: 0.4s;
+		}
+
+			.content{
+			margin-top: 1%;
+			display: inline-flex;
+			gap:2%;
+			max-height: 100%;
+		}
+
+		.content p{
+			font-family: "Courier New", monospace;
+			font-size: 15px;
+			padding: 5%;
+			font-weight: bolder;
+			margin: 0px;
+		}
+
+		.box1{
+			background-color: whitesmoke;
+			width: 25%;
+			height: 500px;
+			border-radius: 20px;
+			border: solid black 1px
+		}
+
+		.box2{
+
+			background-color: whitesmoke;
+			width: 25%;
+			height: 500px;
+			border-radius: 20px;
+			border: solid black 1px
+		}
+
+		.content img{
+			margin: 0px;
+			height: 55%;
+			width: 100%;
+			border-radius: 20px;
+			border: 0px;
+		}
+
+	
+
+	</style>
+</head>
+<body>
+
+
+<div class="box">
+<p><a href="index.html">VetCare</a></p>
+
+</div>
+<div class="header">
+	
+	<img onclick="home() " src="Logo.png">
+	<ul>
+
+	<a href="index.html"><li>Home</li></a>	
+	<a href="features.html"><li>Features</li></a>
+	<a href="aboutUs.html"><li>About Us</li></a>
+
+	</ul>
+
+
+</div>
+
+	<div class="login">
+	<input type="text" placeholder="Username">
+	<input type="text" placeholder="Password">
+	<button> <a href="dashboard.html">log in<a/></button>
+	</div>
+
+
+	<div class="content">
+
+	<div class="box1">
+		<img src="feature1.jpg">
+
+			<p> Pet Profiles easily manage and access detailed information about each pet, including medical history, vaccinations, and appointments, all in one place. Stay organized with up-to-date records tailored for every patient. Simplify pet care management and ensure better health tracking for your furry clients.</p>
+		</div>
+		
+
+		<div class="box2">
+	
+	<img src="feature2.jpg">
+
+			<p> PawStock monitors and manage your clinic's inventory with ease, ensuring supplies are always stocked and organized for seamless operations. Track usage trends, set low-stock alerts, and prevent shortages with real-time updates. Simplify inventory management so you can focus on providing care for your patients.</p>
+	</div>
+
+		<div class="box1">
+		<img src="feature3.jpg">
+
+			<p>PawPoint Scheduler simplifies appointment management, keeping your clinic organized and efficient. It allows you to set reminders and send notifications to ensure no consultation or follow-up is missed. With real-time updates and an intuitive interface, managing your clinic’s schedule has never been easier.</p>
+		</div>
+		
+
+		<div class="box2">
+	
+	<img src="feature4.jpg">
+
+
+			<p>PawTally helps veterinary clinics track payments and monitor revenue with ease. It provides real-time insights into financial activities, ensuring accurate records. PawTally simplifies the process of managing clinic finances.</p>
+	</div>
+</div>
+
+
+
+</body>
+</html>
+
+<script type="text/javascript">
+	function home(){
+		location.replace("index.html");
+	}
+</script>
